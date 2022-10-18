@@ -1,3 +1,2 @@
 # terfelszinszamito
-goofy ahh(h) terfelszamitas
-Dame tu cosita
+https://terfelszinszamito.atlassian.net/jira/software/projects/TR/boards/2

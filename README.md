@@ -1,3 +1,4 @@
 # terfelszinszamito
 JIRA - https://terfelszinszamito.atlassian.net/jira/software/projects/TR/boards/2  
-Főoldal terv (WIP) - https://www.figma.com/file/y4axC3RRWIExA0mpR5DSDS/Untitled?node-id=0%3A1  
+Főoldal terv (open beta) - https://www.figma.com/file/y4axC3RRWIExA0mpR5DSDS/Weboldal---F%C5%91oldal-terv?node-id=0%3A1  
+Leírás terv (closed alpha) - https://www.figma.com/file/e8LSlEFm58UXuu3G7TQxOD/Weboldal---Le%C3%ADr%C3%A1s-terv

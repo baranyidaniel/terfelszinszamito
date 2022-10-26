@@ -1,11 +1,11 @@
 # terfelszinszamito
 Opus Dei:  
-JIRA - shorturl.at/gnMPU  
+JIRA - https://shorturl.at/gnMPU  
   
-Főoldal terv - shorturl.at/goJX4    
-Leírás terv - shorturl.at/dGT38  
+Főoldal terv - https://shorturl.at/goJX4    
+Leírás terv - https://shorturl.at/dGT38  
   
-Főoldal (mobilos) terv - shorturl.at/bfzY2  
-Leírás(mobilos) terv - shorturl.at/lvwE1
+Főoldal (mobilos) terv - https://shorturl.at/bfzY2  
+Leírás(mobilos) terv - https://shorturl.at/lvwE1
   
-Applikáció terv - shorturl.at/mo267  
+Applikáció terv - https://shorturl.at/mo267  

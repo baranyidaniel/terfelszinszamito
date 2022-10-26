@@ -7,5 +7,3 @@ Leírás terv - https://shorturl.at/dGT38
   
 Főoldal (mobilos) terv - https://shorturl.at/bfzY2  
 Leírás(mobilos) terv - https://shorturl.at/lvwE1
-  
-Applikáció terv - https://shorturl.at/mo267  

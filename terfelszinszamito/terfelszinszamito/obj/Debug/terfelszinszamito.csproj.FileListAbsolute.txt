@@ -1,0 +1,10 @@
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\bin\Debug\terfelszinszamito.exe.config
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\bin\Debug\terfelszinszamito.exe
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\bin\Debug\terfelszinszamito.pdb
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.AssemblyReference.cache
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.Form1.resources
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.Properties.Resources.resources
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.GenerateResource.cache
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.CoreCompileInputs.cache
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.exe
+H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.pdb

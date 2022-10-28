@@ -1,6 +1,6 @@
 # terfelszinszamito
 Opus Dei:  
-JIRA - https://shorturl.at/gnMPU  
+JIRA - https://terfelszinszamito.atlassian.net/jira/software/projects/TR/boards/2  
   
 Főoldal terv - https://shorturl.at/goJX4    
 Leírás terv - https://shorturl.at/dGT38  

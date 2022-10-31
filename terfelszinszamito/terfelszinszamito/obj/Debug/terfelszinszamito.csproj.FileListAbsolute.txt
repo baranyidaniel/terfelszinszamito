@@ -18,3 +18,13 @@ H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\
 H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.CoreCompileInputs.cache
 H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.exe
 H:\214szft\ikt\terfelszin\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.pdb
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\bin\Debug\terfelszinszamito.exe.config
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\bin\Debug\terfelszinszamito.exe
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\bin\Debug\terfelszinszamito.pdb
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csprojAssemblyReference.cache
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.Form1.resources
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.Properties.Resources.resources
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.GenerateResource.cache
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.CoreCompileInputs.cache
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.exe
+X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.pdb

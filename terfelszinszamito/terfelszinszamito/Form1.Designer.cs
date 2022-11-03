@@ -145,9 +145,9 @@ namespace terfelszinszamito
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(14, 175);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 16);
+            this.label6.Size = new System.Drawing.Size(98, 16);
             this.label6.TabIndex = 12;
-            this.label6.Text = "egyéb:";
+            this.label6.Text = "magasság (m):";
             // 
             // textBox1
             // 
@@ -179,9 +179,9 @@ namespace terfelszinszamito
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(72, 174);
+            this.textBox5.Location = new System.Drawing.Point(118, 174);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 20);
+            this.textBox5.Size = new System.Drawing.Size(86, 20);
             this.textBox5.TabIndex = 11;
             // 
             // button1
@@ -206,7 +206,7 @@ namespace terfelszinszamito
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(14, 294);
+            this.label8.Location = new System.Drawing.Point(14, 297);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 16);
             this.label8.TabIndex = 18;
@@ -214,7 +214,7 @@ namespace terfelszinszamito
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(72, 293);
+            this.textBox6.Location = new System.Drawing.Point(72, 296);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(132, 20);
             this.textBox6.TabIndex = 17;
@@ -223,7 +223,7 @@ namespace terfelszinszamito
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(14, 320);
+            this.label9.Location = new System.Drawing.Point(14, 323);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 16);
             this.label9.TabIndex = 20;
@@ -231,7 +231,7 @@ namespace terfelszinszamito
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(72, 319);
+            this.textBox7.Location = new System.Drawing.Point(72, 322);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 20);
             this.textBox7.TabIndex = 19;
@@ -250,41 +250,46 @@ namespace terfelszinszamito
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(14, 346);
+            this.label7.Location = new System.Drawing.Point(14, 349);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 16);
             this.label7.TabIndex = 23;
             this.label7.Text = "Felület:";
+            this.label7.Visible = false;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(72, 345);
+            this.textBox8.Location = new System.Drawing.Point(72, 348);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(132, 20);
             this.textBox8.TabIndex = 22;
+            this.textBox8.Visible = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(14, 372);
+            this.label11.Location = new System.Drawing.Point(14, 375);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 16);
             this.label11.TabIndex = 25;
             this.label11.Text = "Térfogat:";
+            this.label11.Visible = false;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(82, 371);
+            this.textBox9.Location = new System.Drawing.Point(82, 374);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(122, 20);
             this.textBox9.TabIndex = 24;
+            this.textBox9.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 404);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(834, 401);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label7);
@@ -309,6 +314,8 @@ namespace terfelszinszamito
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(850, 440);
+            this.MinimumSize = new System.Drawing.Size(850, 440);
             this.Name = "Form1";
             this.Text = "Térfelszínszámító";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

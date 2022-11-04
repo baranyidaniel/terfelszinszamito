@@ -73,7 +73,6 @@ namespace terfelszinszamito
             this.pictureBox1.Location = new System.Drawing.Point(319, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(500, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -108,7 +107,6 @@ namespace terfelszinszamito
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "a oldal:";
-            this.label2.Visible = false;
             // 
             // label3
             // 
@@ -116,10 +114,9 @@ namespace terfelszinszamito
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(14, 97);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 6;
-            this.label3.Text = "b oldal:";
-            this.label3.Visible = false;
+            this.label3.Text = "e átló:";
             // 
             // label4
             // 
@@ -127,10 +124,9 @@ namespace terfelszinszamito
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(14, 123);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 16);
+            this.label4.Size = new System.Drawing.Size(39, 16);
             this.label4.TabIndex = 8;
-            this.label4.Text = "c oldal:";
-            this.label4.Visible = false;
+            this.label4.Text = "f átló:";
             // 
             // label5
             // 
@@ -138,9 +134,9 @@ namespace terfelszinszamito
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(14, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.Size = new System.Drawing.Size(39, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "d oldal:";
+            this.label5.Text = "f átló:";
             this.label5.Visible = false;
             // 
             // label6
@@ -160,7 +156,6 @@ namespace terfelszinszamito
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 20);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Visible = false;
             // 
             // textBox2
             // 
@@ -168,7 +163,6 @@ namespace terfelszinszamito
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 20);
             this.textBox2.TabIndex = 5;
-            this.textBox2.Visible = false;
             // 
             // textBox3
             // 
@@ -176,7 +170,6 @@ namespace terfelszinszamito
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 20);
             this.textBox3.TabIndex = 7;
-            this.textBox3.Visible = false;
             // 
             // textBox4
             // 
@@ -202,7 +195,6 @@ namespace terfelszinszamito
             this.button1.TabIndex = 13;
             this.button1.Text = "Számol";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
             // 
             // button2
             // 
@@ -212,7 +204,6 @@ namespace terfelszinszamito
             this.button2.TabIndex = 14;
             this.button2.Text = "Mezők törlése";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
             // 
             // label8
             // 
@@ -223,7 +214,6 @@ namespace terfelszinszamito
             this.label8.Size = new System.Drawing.Size(52, 16);
             this.label8.TabIndex = 18;
             this.label8.Text = "Kerület:";
-            this.label8.Visible = false;
             // 
             // textBox6
             // 
@@ -231,7 +221,6 @@ namespace terfelszinszamito
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(132, 20);
             this.textBox6.TabIndex = 17;
-            this.textBox6.Visible = false;
             // 
             // label9
             // 
@@ -242,7 +231,6 @@ namespace terfelszinszamito
             this.label9.Size = new System.Drawing.Size(53, 16);
             this.label9.TabIndex = 20;
             this.label9.Text = "Terület:";
-            this.label9.Visible = false;
             // 
             // textBox7
             // 
@@ -250,7 +238,6 @@ namespace terfelszinszamito
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 20);
             this.textBox7.TabIndex = 19;
-            this.textBox7.Visible = false;
             // 
             // label10
             // 
@@ -261,7 +248,6 @@ namespace terfelszinszamito
             this.label10.Size = new System.Drawing.Size(123, 24);
             this.label10.TabIndex = 21;
             this.label10.Text = "Eredmények:";
-            this.label10.Visible = false;
             // 
             // label7
             // 

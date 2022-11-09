@@ -1,0 +1,53 @@
+body{
+    font-family: inter;
+    color: #000000;
+    background: linear-gradient(107.29deg, #56F1C0 0.38%, #70D3F0 100%);
+}
+
+nav{
+    height: 85px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 0px 10px 8px #0000002c;
+    
+}
+
+h1{
+    text-align: center;
+    height: 58px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.navcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+  }
+.navitem {
+    flex: 0 0 auto;
+    margin: 10px;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#fejlesztok{
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+  }

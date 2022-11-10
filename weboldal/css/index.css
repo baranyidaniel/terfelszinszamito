@@ -15,10 +15,6 @@ nav{
 
 h1{
     text-align: center;
-    height: 58px;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
 }
 
 .navcontainer {
@@ -37,13 +33,10 @@ h1{
 a{
     color: #000000;
     text-decoration: none;
-    font-weight: bold;
 }
 
 #fejlesztok{
     text-align: center;
-    font-size: 32px;
-    line-height: 39px;
     font-style: normal;
 }
 
@@ -51,3 +44,16 @@ a{
     font-family: inter;
     src: url(Inter-VariableFont_slnt\,wght.ttf);
   }
+
+.szivarok{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    background: rgb(255, 255, 255, 0.5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

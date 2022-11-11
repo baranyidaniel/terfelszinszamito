@@ -33,9 +33,7 @@ namespace terfelszinszamito
             this.valassz = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.eredmeny1Lbl = new System.Windows.Forms.Label();
             this.eredmeny1Txt = new System.Windows.Forms.TextBox();
-            this.eredmeny2Lbl = new System.Windows.Forms.Label();
             this.eredmeny2Txt = new System.Windows.Forms.TextBox();
             this.eredmenyLbl = new System.Windows.Forms.Label();
             this.torolBtn = new System.Windows.Forms.Button();
@@ -50,6 +48,8 @@ namespace terfelszinszamito
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.eredmeny1Lbl = new System.Windows.Forms.Label();
+            this.eredmeny2Lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -102,43 +102,21 @@ namespace terfelszinszamito
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // eredmeny1Lbl
-            // 
-            this.eredmeny1Lbl.AutoSize = true;
-            this.eredmeny1Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.eredmeny1Lbl.Location = new System.Drawing.Point(13, 269);
-            this.eredmeny1Lbl.Name = "eredmeny1Lbl";
-            this.eredmeny1Lbl.Size = new System.Drawing.Size(52, 16);
-            this.eredmeny1Lbl.TabIndex = 18;
-            this.eredmeny1Lbl.Text = "Kerület:";
-            this.eredmeny1Lbl.Visible = false;
-            // 
             // eredmeny1Txt
             // 
             this.eredmeny1Txt.Enabled = false;
-            this.eredmeny1Txt.Location = new System.Drawing.Point(71, 268);
+            this.eredmeny1Txt.Location = new System.Drawing.Point(94, 268);
             this.eredmeny1Txt.Name = "eredmeny1Txt";
-            this.eredmeny1Txt.Size = new System.Drawing.Size(135, 20);
+            this.eredmeny1Txt.Size = new System.Drawing.Size(112, 20);
             this.eredmeny1Txt.TabIndex = 17;
             this.eredmeny1Txt.Visible = false;
-            // 
-            // eredmeny2Lbl
-            // 
-            this.eredmeny2Lbl.AutoSize = true;
-            this.eredmeny2Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.eredmeny2Lbl.Location = new System.Drawing.Point(13, 295);
-            this.eredmeny2Lbl.Name = "eredmeny2Lbl";
-            this.eredmeny2Lbl.Size = new System.Drawing.Size(53, 16);
-            this.eredmeny2Lbl.TabIndex = 20;
-            this.eredmeny2Lbl.Text = "Terület:";
-            this.eredmeny2Lbl.Visible = false;
             // 
             // eredmeny2Txt
             // 
             this.eredmeny2Txt.Enabled = false;
-            this.eredmeny2Txt.Location = new System.Drawing.Point(71, 294);
+            this.eredmeny2Txt.Location = new System.Drawing.Point(94, 294);
             this.eredmeny2Txt.Name = "eredmeny2Txt";
-            this.eredmeny2Txt.Size = new System.Drawing.Size(135, 20);
+            this.eredmeny2Txt.Size = new System.Drawing.Size(112, 20);
             this.eredmeny2Txt.TabIndex = 19;
             this.eredmeny2Txt.Visible = false;
             // 
@@ -173,6 +151,7 @@ namespace terfelszinszamito
             this.szamolBtn.Text = "Számol";
             this.szamolBtn.UseVisualStyleBackColor = true;
             this.szamolBtn.Visible = false;
+            this.szamolBtn.Click += new System.EventHandler(this.szamolBtn_Click);
             // 
             // label1
             // 
@@ -294,12 +273,34 @@ namespace terfelszinszamito
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label5.Visible = false;
             // 
+            // eredmeny1Lbl
+            // 
+            this.eredmeny1Lbl.Location = new System.Drawing.Point(13, 268);
+            this.eredmeny1Lbl.Name = "eredmeny1Lbl";
+            this.eredmeny1Lbl.Size = new System.Drawing.Size(75, 20);
+            this.eredmeny1Lbl.TabIndex = 38;
+            this.eredmeny1Lbl.Text = "text";
+            this.eredmeny1Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.eredmeny1Lbl.Visible = false;
+            // 
+            // eredmeny2Lbl
+            // 
+            this.eredmeny2Lbl.Location = new System.Drawing.Point(13, 294);
+            this.eredmeny2Lbl.Name = "eredmeny2Lbl";
+            this.eredmeny2Lbl.Size = new System.Drawing.Size(75, 20);
+            this.eredmeny2Lbl.TabIndex = 39;
+            this.eredmeny2Lbl.Text = "text";
+            this.eredmeny2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.eredmeny2Lbl.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(834, 401);
+            this.Controls.Add(this.eredmeny2Lbl);
+            this.Controls.Add(this.eredmeny1Lbl);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -313,9 +314,7 @@ namespace terfelszinszamito
             this.Controls.Add(this.szamolBtn);
             this.Controls.Add(this.torolBtn);
             this.Controls.Add(this.eredmenyLbl);
-            this.Controls.Add(this.eredmeny2Lbl);
             this.Controls.Add(this.eredmeny2Txt);
-            this.Controls.Add(this.eredmeny1Lbl);
             this.Controls.Add(this.eredmeny1Txt);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
@@ -340,9 +339,7 @@ namespace terfelszinszamito
         private System.Windows.Forms.Label valassz;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label eredmeny1Lbl;
         private System.Windows.Forms.TextBox eredmeny1Txt;
-        private System.Windows.Forms.Label eredmeny2Lbl;
         private System.Windows.Forms.TextBox eredmeny2Txt;
         private System.Windows.Forms.Label eredmenyLbl;
         private System.Windows.Forms.Button torolBtn;
@@ -357,6 +354,8 @@ namespace terfelszinszamito
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label eredmeny1Lbl;
+        private System.Windows.Forms.Label eredmeny2Lbl;
     }
 }
 

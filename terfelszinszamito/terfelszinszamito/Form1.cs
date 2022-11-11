@@ -52,9 +52,9 @@ namespace terfelszinszamito
                         label3.Visible = true;
                         numericUpDown3.Visible = true;
 
-                        label4.Text = "magasság (m):";
-                        label4.Visible = true;
-                        numericUpDown4.Visible = true;
+                        label4.Text = "";
+                        label4.Visible = false;
+                        numericUpDown4.Visible = false;
 
                         label5.Text = "";
                         label5.Visible = false;
@@ -366,6 +366,12 @@ namespace terfelszinszamito
                         break;
                     }
             }
+
+            NumericUpDowns.Add(numericUpDown1);
+            NumericUpDowns.Add(numericUpDown2);
+            NumericUpDowns.Add(numericUpDown3);
+            NumericUpDowns.Add(numericUpDown4);
+            NumericUpDowns.Add(numericUpDown5);
         }
 
         private void numericUpDown1_Click(object sender, EventArgs e)
@@ -540,12 +546,6 @@ namespace terfelszinszamito
         {
             switch (comboBox1.SelectedItem.ToString())
             {
-                case "Háromszög":
-                    {
-                        pictureBox1.Image = Image.FromFile("alakzat/haromszog/3szeg_magassag.png");
-                        break;
-                    }
-
                 case "Trapéz":
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/trapez/trapez_doldal.png");
@@ -586,9 +586,166 @@ namespace terfelszinszamito
 
         private void torolBtn_Click(object sender, EventArgs e)
         {
-            foreach (NumericUpDown item in Controls) item.Text = "";
+            foreach (NumericUpDown item in NumericUpDowns) item.Value = 0;
             eredmeny1Txt.Text = "";
             eredmeny2Txt.Text = "";
+        }
+
+        private void szamolBtn_Click(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedItem.ToString())
+            {
+                case "Háromszög":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/haromszog/3szeg_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               b = Convert.ToDouble(numericUpDown2.Value),
+                               c = Convert.ToDouble(numericUpDown3.Value),
+                               s = (a+b+c) / 2;
+
+                        eredmeny1Txt.Text = (a + b + c).ToString();
+                        eredmeny2Txt.Text = Math.Sqrt(s*(s-a)*(s-b)*(s-c)).ToString();
+
+                        break;
+                    }
+
+                case "Négyzet":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/negyzet/negyzet_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value);
+
+                        eredmeny1Txt.Text = (4 * a).ToString();
+                        eredmeny2Txt.Text = Math.Pow(a, 2).ToString();
+
+                        break;
+                    }
+
+                case "Trapéz":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/trapez/trapez_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               b = Convert.ToDouble(numericUpDown2.Value),
+                               c = Convert.ToDouble(numericUpDown3.Value),
+                               d = Convert.ToDouble(numericUpDown4.Value),
+                               m = Convert.ToDouble(numericUpDown5.Value);
+
+                        eredmeny1Txt.Text = (a + b + c + d).ToString();
+                        eredmeny2Txt.Text = (a+c/2*m).ToString();
+
+                        break;
+                    }
+
+                case "Téglalap":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/teglalap/teglalap_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               b = Convert.ToDouble(numericUpDown2.Value);
+
+                        eredmeny1Txt.Text = (2 * (a + b)).ToString();
+                        eredmeny2Txt.Text = (a * b).ToString();
+
+                        break;
+                    }
+
+                case "Paralelogramma":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/para/paralelogramma_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               b = Convert.ToDouble(numericUpDown2.Value),
+                               m = Convert.ToDouble(numericUpDown3.Value);
+
+                        eredmeny1Txt.Text = (2 * (a + b)).ToString();
+                        eredmeny2Txt.Text = (a * m).ToString();
+
+                        break;
+                    }
+
+                case "Rombusz":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/rombusz/rombusz_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               e_atlo = Convert.ToDouble(numericUpDown2.Value),
+                               f_atlo = Convert.ToDouble(numericUpDown3.Value);
+
+                        eredmeny1Txt.Text = (4 * a).ToString();
+                        eredmeny2Txt.Text = (e_atlo * f_atlo / 2).ToString();
+
+                        break;
+                    }
+
+                case "Deltoid":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/deltoid/deltoid_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               b = Convert.ToDouble(numericUpDown2.Value),
+                               e_atlo = Convert.ToDouble(numericUpDown3.Value),
+                               f_atlo = Convert.ToDouble(numericUpDown4.Value);
+
+                        eredmeny1Txt.Text = (2 * (a + b)).ToString();
+                        eredmeny2Txt.Text = (e_atlo * f_atlo / 2).ToString();
+
+                        break;
+                    }
+
+                case "Kör":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/kor/le_cercle_alap.png");
+
+                        double r = Convert.ToDouble(numericUpDown1.Value);
+
+                        eredmeny1Txt.Text = (Math.PI * Math.Pow(r, 2)).ToString();
+                        eredmeny2Txt.Text = (2 * r * Math.PI).ToString();
+
+                        break;
+                    }
+
+                case "Henger":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/henger/henger_alap.png");
+
+                        double r = Convert.ToDouble(numericUpDown1.Value),
+                               m = Convert.ToDouble(numericUpDown2.Value),
+                               terulet_palast = 2 * Math.PI * m;
+
+                        eredmeny1Txt.Text = (terulet_palast + Math.PI * Math.Pow(r, 2)).ToString();
+                        eredmeny2Txt.Text = (Math.PI * Math.Pow(r, 2) * m).ToString();
+
+                        break;
+                    }
+
+                case "Gúla":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_alap.png");
+
+                        double a = Convert.ToDouble(numericUpDown1.Value),
+                               P = 4 * (Math.Sqrt(3) / 2 * a),
+                               test_m = Convert.ToDouble(numericUpDown5.Value);
+
+                        eredmeny1Txt.Text = (Math.Pow(a, 2) + P).ToString();
+                        eredmeny2Txt.Text = (4 * a * test_m / 3).ToString();
+
+                        break;
+                    }
+
+                case "Gömb":
+                    {
+                        pictureBox1.Image = Image.FromFile("alakzat/gomb/gomb_alap.png");
+
+                        double r = Convert.ToDouble(numericUpDown1.Value);
+
+                        eredmeny1Txt.Text = (4 * Math.PI * Math.Pow(r, 2)).ToString();
+                        eredmeny2Txt.Text = (4 / 3 * Math.PI + Math.Pow(r, 3)).ToString();
+
+                        break;
+                    }
+            }
         }
     }
 }

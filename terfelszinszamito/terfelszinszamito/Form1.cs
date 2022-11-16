@@ -12,15 +12,17 @@ namespace terfelszinszamito
 {
     public partial class Form1 : Form
     {
-        static List<Label> labels = new List<Label>();
         static List<NumericUpDown> NumericUpDowns = new List<NumericUpDown>();
         public Form1()
         {
             InitializeComponent();
+            // gyenge idegzetűek ne görgessenek tovább
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            KiUrit();
+
             eredmenyLbl.Visible = true;
             eredmeny1Lbl.Visible = true;
             eredmeny2Lbl.Visible = true;
@@ -586,6 +588,11 @@ namespace terfelszinszamito
 
         private void torolBtn_Click(object sender, EventArgs e)
         {
+            KiUrit();
+        }
+
+        private void KiUrit()
+        {
             foreach (NumericUpDown item in NumericUpDowns) item.Value = 0;
             eredmeny1Txt.Text = "";
             eredmeny2Txt.Text = "";
@@ -593,6 +600,7 @@ namespace terfelszinszamito
 
         private void szamolBtn_Click(object sender, EventArgs e)
         {
+            double eredmeny1 = 0, eredmeny2 = 0;
             switch (comboBox1.SelectedItem.ToString())
             {
                 case "Háromszög":
@@ -604,9 +612,16 @@ namespace terfelszinszamito
                                c = Convert.ToDouble(numericUpDown3.Value),
                                s = (a+b+c) / 2;
 
-                        eredmeny1Txt.Text = (a + b + c).ToString();
-                        eredmeny2Txt.Text = Math.Sqrt(s*(s-a)*(s-b)*(s-c)).ToString();
-
+                        if ((a < b + c) && (b < a + c) && (c < a + b))
+                        {
+                            eredmeny1 = a + b + c;
+                            eredmeny2 = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+                        }
+                        else
+                        {
+                            eredmeny1 = -1;
+                            eredmeny2 = -1;
+                        }
                         break;
                     }
 
@@ -616,8 +631,8 @@ namespace terfelszinszamito
 
                         double a = Convert.ToDouble(numericUpDown1.Value);
 
-                        eredmeny1Txt.Text = (4 * a).ToString();
-                        eredmeny2Txt.Text = Math.Pow(a, 2).ToString();
+                        eredmeny1 = 4 * a;
+                        eredmeny2 = Math.Pow(a, 2);
 
                         break;
                     }
@@ -632,8 +647,8 @@ namespace terfelszinszamito
                                d = Convert.ToDouble(numericUpDown4.Value),
                                m = Convert.ToDouble(numericUpDown5.Value);
 
-                        eredmeny1Txt.Text = (a + b + c + d).ToString();
-                        eredmeny2Txt.Text = (a+c/2*m).ToString();
+                        eredmeny1 = a + b + c + d;
+                        eredmeny2 = a + c / 2 * m;
 
                         break;
                     }
@@ -645,8 +660,8 @@ namespace terfelszinszamito
                         double a = Convert.ToDouble(numericUpDown1.Value),
                                b = Convert.ToDouble(numericUpDown2.Value);
 
-                        eredmeny1Txt.Text = (2 * (a + b)).ToString();
-                        eredmeny2Txt.Text = (a * b).ToString();
+                        eredmeny1 = 2 * (a + b);
+                        eredmeny2 = a * b;
 
                         break;
                     }
@@ -659,8 +674,8 @@ namespace terfelszinszamito
                                b = Convert.ToDouble(numericUpDown2.Value),
                                m = Convert.ToDouble(numericUpDown3.Value);
 
-                        eredmeny1Txt.Text = (2 * (a + b)).ToString();
-                        eredmeny2Txt.Text = (a * m).ToString();
+                        eredmeny1 = 2 * (a + b);
+                        eredmeny2 = a * m;
 
                         break;
                     }
@@ -673,8 +688,8 @@ namespace terfelszinszamito
                                e_atlo = Convert.ToDouble(numericUpDown2.Value),
                                f_atlo = Convert.ToDouble(numericUpDown3.Value);
 
-                        eredmeny1Txt.Text = (4 * a).ToString();
-                        eredmeny2Txt.Text = (e_atlo * f_atlo / 2).ToString();
+                        eredmeny1 = 4 * a;
+                        eredmeny2 = e_atlo * f_atlo / 2;
 
                         break;
                     }
@@ -688,8 +703,8 @@ namespace terfelszinszamito
                                e_atlo = Convert.ToDouble(numericUpDown3.Value),
                                f_atlo = Convert.ToDouble(numericUpDown4.Value);
 
-                        eredmeny1Txt.Text = (2 * (a + b)).ToString();
-                        eredmeny2Txt.Text = (e_atlo * f_atlo / 2).ToString();
+                        eredmeny1 = 2 * (a + b);
+                        eredmeny2 = e_atlo * f_atlo / 2;
 
                         break;
                     }
@@ -700,8 +715,8 @@ namespace terfelszinszamito
 
                         double r = Convert.ToDouble(numericUpDown1.Value);
 
-                        eredmeny1Txt.Text = (Math.PI * Math.Pow(r, 2)).ToString();
-                        eredmeny2Txt.Text = (2 * r * Math.PI).ToString();
+                        eredmeny1 = Math.PI * Math.Pow(r, 2);
+                        eredmeny2 = 2 * r * Math.PI;
 
                         break;
                     }
@@ -714,8 +729,8 @@ namespace terfelszinszamito
                                m = Convert.ToDouble(numericUpDown2.Value),
                                terulet_palast = 2 * Math.PI * m;
 
-                        eredmeny1Txt.Text = (terulet_palast + Math.PI * Math.Pow(r, 2)).ToString();
-                        eredmeny2Txt.Text = (Math.PI * Math.Pow(r, 2) * m).ToString();
+                        eredmeny1 = terulet_palast + Math.PI * Math.Pow(r, 2);
+                        eredmeny2 = Math.PI * Math.Pow(r, 2) * m;
 
                         break;
                     }
@@ -728,8 +743,8 @@ namespace terfelszinszamito
                                P = 4 * (Math.Sqrt(3) / 2 * a),
                                test_m = Convert.ToDouble(numericUpDown5.Value);
 
-                        eredmeny1Txt.Text = (Math.Pow(a, 2) + P).ToString();
-                        eredmeny2Txt.Text = (4 * a * test_m / 3).ToString();
+                        eredmeny1 = Math.Pow(a, 2) + P;
+                        eredmeny2 = 4 * a * test_m / 3;
 
                         break;
                     }
@@ -740,11 +755,22 @@ namespace terfelszinszamito
 
                         double r = Convert.ToDouble(numericUpDown1.Value);
 
-                        eredmeny1Txt.Text = (4 * Math.PI * Math.Pow(r, 2)).ToString();
-                        eredmeny2Txt.Text = (4 / 3 * Math.PI + Math.Pow(r, 3)).ToString();
+                        eredmeny1 = 4 * Math.PI * Math.Pow(r, 2);
+                        eredmeny2 = 4 / 3 * Math.PI + Math.Pow(r, 3);
 
                         break;
                     }
+            }
+
+            if (eredmeny1 == -1 || eredmeny2 == -1)
+            {
+                eredmeny1Txt.Text = "Nem létezik!";
+                eredmeny2Txt.Text = "Nem létezik!";
+            }
+            else
+            {
+                eredmeny1Txt.Text = eredmeny1.ToString("#.##");
+                eredmeny2Txt.Text = eredmeny2.ToString("#.##");
             }
         }
     }

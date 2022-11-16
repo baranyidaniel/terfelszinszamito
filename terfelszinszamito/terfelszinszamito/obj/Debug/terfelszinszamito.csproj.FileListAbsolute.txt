@@ -28,3 +28,6 @@ X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\
 X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.csproj.CoreCompileInputs.cache
 X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.exe
 X:\a\suli\214szft\ikt\terfelszinszamito\terfelszinszamito\terfelszinszamito\obj\Debug\terfelszinszamito.pdb
+C:\Users\vighakos\Downloads\terfelszinszamito.exe.config
+C:\Users\vighakos\Downloads\terfelszinszamito.exe
+C:\Users\vighakos\Downloads\terfelszinszamito.pdb

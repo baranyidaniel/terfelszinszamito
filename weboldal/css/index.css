@@ -68,8 +68,6 @@ src: url(css/Inter-VariableFont_slnt\,wght.ttf);
     padding-bottom: 15px;
 }
 */
-<<<<<<< HEAD
-
 .container {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -105,27 +103,4 @@ section{
 }
 header{
     margin-top: 5%;
-=======
-            
-.container {
-background-color: rgba(255, 255, 255, 0.5);
-}
-            
-img {
-height: 90%;
-width: 100%;
-display: block;
-}
-            
-.row {
-text-align: center;
-}
-            
-#text {
-padding: 10%;
-}
-            
-#fejlesztok {
-font-weight: bold;
->>>>>>> a42141c8db5ddf38d98e7af781b5f9cd1d275c8d
 }

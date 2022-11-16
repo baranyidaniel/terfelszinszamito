@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Térfelszínszámító</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/leiras.css">
 </head>
 <body>
-    xd
+    <header>
+        <h1>Térfelszínszámító</h1>
+        <nav class="navcontainer">
+            <a href="index.html" class="navitem">Főoldal</a>
+            <a href="leiras.html" class="navitem">Leírás</a>
+            <a href="" class="navitem">Letöltés</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container-xxl">
+            <h2>Leírás</h2>
+            <div class="leiras">
+                Az alkalmazás C# nyelvben íródik. Amikor lefuttatjuk, megjelenik egy form, 
+                ahol először egy combobox található, egy label, és egy picturebox. <br>
+                <br>
+
+                A combobox-ra kattintva lenyílik egy lista, és ki lehet választani a kívánt 
+                alakzatot. Az alakzat kiválasztása után megjelenik egy picturebox, amin a 
+                kiválasztott alakzat látható, valamint az oldalait jelző betűk. A szükséges 
+                beviteli mezők is megjelennek. A beviteli mezőkre kattintva a megfelelő 
+                oldal is ki lesz jelölve a képen. A beviteli mezők csak egész- vagy 
+                törtszámot fogadnak el. <br>
+                <br>
+
+                A „Számol” feliratú gombra kattintásnál több dolog 
+                is történik. A program itt ellenőrzi le, hogy a beviteli mezőkben lévő 
+                értékek helyesek-e. Ha valamelyik mezőből hiányzik érték, vagy nem pozitív 
+                egész/tört számot írtak, akkor egy messagebox segítségével figyelmezteti a 
+                felhasználót ezekről a helytelenségekről. A messagebox bezárása után 
+                megmaradnak a mezőkbe írt értékek, viszont a program nem fog semmit sem 
+                kiszámolni. Ha az összes mezőben helyes érték található, akkor a program a 
+                megfelelő képletek alapján kiszámolja a kiválasztott alakzat kerületét, 
+                térfogatát stb. Ha a képen ki volt emelve egy oldal, akkor a gombra kattintás 
+                után az eredeti kép áll vissza.
+            </div>
+        </div>
+        <div class="container-xxl">
+            <h2>Alakzatok</h2>
+            <div class="alakok">
+                <img src="../docs/app_pics/alakzatképek/haromszog/src/3szeg_alap.png" alt="Háromszög">
+                <p>A geometriában a háromszög olyan sokszög, amelynek három oldala, másként 
+                    fogalmazva három csúcsa van. Egy A, B és C csúcsokkal rendelkező 
+                    háromszög írásban így is jelölhető: ABC△.</p>
+            </div>
+        </div>
+    </main> 
 </body>
 </html>

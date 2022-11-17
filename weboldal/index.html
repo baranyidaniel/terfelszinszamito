@@ -21,54 +21,28 @@
 <body>
 
     <header>
-<!--
-        <h1>Térfelszínszámító</h1>
-        
-            <nav class="navcontainer">
-                <a href="index.html" class="navitem">Főoldal</a>
-                <a href="leiras.html" class="navitem">Leírás</a>
-                <a href="" class="navitem">Letöltés</a>
-            </nav>
-        -->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><b>Térfelszínszámító</b></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="leiras.html">Leírás</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../" download="" target="_blank">Letöltés</a>
-                            <!--<a href="path_to_file" download="proposed_file_name">Download</a>-->
-                            <!--Minta-->
-                        </li>
-                    </ul>
 
-                </div>
-            </div>
+        <h1>Térfelszínszámító</h1>
+        <nav class="navcontainer">
+            <a href="index.html" class="navitem">Főoldal</a>
+            <a href="leiras.html" class="navitem">Leírás</a>
+            <!--<a class="nav-link" href="../" download="" target="_blank">Letöltés</a> --><!--Ez még nem mükődik.-->
+            <!--<a href="path_to_file" download="proposed_file_name">Download</a>-->
+            <!--Minta-->
         </nav>
+
     </header>
 
     <div class="container">
 
         <section>
 
-
             <h2 id="fejlesztok">Fejlesztők</h2>
 
             <div class="row">
                 <div class="mb-3 col-md-4 ">
                     <div class="card mb-4 box-shadow " style="margin: 3%;padding: 5%; ">
-                        <img class="card-img-top " src="img/blank.jpeg " alt="Vígh Ákos " width="30% "
+                        <img class="card-img-top " src="img/akos.jpg" alt="Vígh Ákos " width="30% "
                             data-holder-rendered="true ">
                         <p class="card-text " id="text ">
                         <h3>Vígh Ákos</h3><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
@@ -81,7 +55,7 @@
 
                 <div class="mb-3 col-md-4 ">
                     <div class="card mb-4 box-shadow " style="margin: 3%; padding: 5%; ">
-                        <img class="card-img-top " src="img/blank.jpeg " alt="Baranyi Dániel ">
+                        <img class="card-img-top " src="img/tate2.jpg" alt="Baranyi Dániel ">
                         <p class="card-text " id="text ">
                         <h3>Baranyi Dániel</h3><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         vehicula orci vel consequat consequat. Aenean sed lacus at nisi rhoncus pulvinar in et mi. Nulla
@@ -93,7 +67,7 @@
 
                 <div class="mb-3 col-md-4 ">
                     <div class="card mb-4 box-shadow " style="margin: 3%; padding: 5%; ">
-                        <img class="card-img-top " src="img/blank.jpeg " alt="Kerekes István " height="20% ">
+                        <img class="card-img-top " src="img/itsmeCarlchillchill.jpg" alt="Kerekes István " height="20% ">
                         <p class="card-text " id="text ">
                         <h3>Kerekes István</h3><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         vehicula orci vel consequat consequat. Aenean sed lacus at nisi rhoncus pulvinar in et mi. Nulla
@@ -103,24 +77,21 @@
                     </div>
                 </div>
             </div>
-            <form method="post" action=""></form>
-            <div class="row">
-                <div class="msg container-fluid">
-                    <div class="card mb-4 box-shadow " style="margin: 3%;padding: 5%; ">
-                        <div class="mb-3" style="text-align: left;">
-                            <label for=" useremail " class="form-label ">E-mail cím</label>
-                            <input type="email " class="form-control " id="useremail " placeholder="pelda@example.com "
-                                style="width: 50%; ">
+            <div class="mb-3">
+                <form method="post" action="#">
+                    <div class="form-control">
+                        <div class="mb-3">
+                            <label for="useremail" class="form-label">E-mail címe:</label>
+                            <input type="email" class="form-control" id="useremail" placeholder="Ide írja e-mail címét...">
                         </div>
-
-                        <div class="mb-3 " style="text-align: left;">
-                            <label for="message " style="font-weight: bold; ">Küldjön nekünk üzenetet!</label>
-                            <textarea class="form-control " name="message " id="message " rows="5 " style="width: 50%; "
-                                placeholder="Üzenet szövege... "></textarea>
-                            <button type="button " class="btn btn-light " style="color: black;">Küldés</button>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Üzenet szövege:</label>
+                            <input type="text" class="form-control" id="message" placeholder="Ide írja üzenetét...">
+                            
                         </div>
                     </div>
-                </div>
+                    <button type="button " class="btn btn-light " style="color: black;">Küldés</button>
+                </form>
             </div>
 
         </section>

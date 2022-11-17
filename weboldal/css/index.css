@@ -53,21 +53,6 @@ font-style: normal;
 font-family: inter;
 src: url(css/Inter-VariableFont_slnt\,wght.ttf);
 }
-
-/*
-.szivarok {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
-    gap: 30px;
-    background: rgb(255, 255, 255, 0.5);
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-*/
 .container {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -89,9 +74,7 @@ img {
 #fejlesztok {
   font-weight: bold;
 }
-nav{
-    margin-bottom: 2%;
-}
+
 li{
     float: center;
 }
@@ -102,5 +85,11 @@ section{
     width: 70%;
 }
 header{
-    margin-top: 5%;
+    margin-top: 2%;
+}
+form{
+  text-align: left;
+}
+input.email{
+  width: 30%;
 }

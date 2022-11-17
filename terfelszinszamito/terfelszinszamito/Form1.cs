@@ -16,7 +16,11 @@ namespace terfelszinszamito
         public Form1()
         {
             InitializeComponent();
-            // gyenge idegzetűek ne görgessenek tovább
+            NumericUpDowns.Add(numericUpDown1);
+            NumericUpDowns.Add(numericUpDown2);
+            NumericUpDowns.Add(numericUpDown3);
+            NumericUpDowns.Add(numericUpDown4);
+            NumericUpDowns.Add(numericUpDown5);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -29,9 +33,14 @@ namespace terfelszinszamito
             eredmeny1Txt.Visible = true;
             eredmeny2Txt.Visible = true;
             szamolBtn.Visible = true;
-            torolBtn.Visible = true;
+            torolBtn.Visible = true; 
+            comboBox2.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
 
             Megjelenit(comboBox1.SelectedItem.ToString());
+            comboBox2.SelectedIndex = 1;
+            MertekegysegLbl();
         }
 
         private void Megjelenit(string selectedItem)
@@ -368,12 +377,6 @@ namespace terfelszinszamito
                         break;
                     }
             }
-
-            NumericUpDowns.Add(numericUpDown1);
-            NumericUpDowns.Add(numericUpDown2);
-            NumericUpDowns.Add(numericUpDown3);
-            NumericUpDowns.Add(numericUpDown4);
-            NumericUpDowns.Add(numericUpDown5);
         }
 
         private void numericUpDown1_Click(object sender, EventArgs e)
@@ -762,7 +765,7 @@ namespace terfelszinszamito
                     }
             }
 
-            if (eredmeny1 == -1 || eredmeny2 == -1)
+            if (eredmeny1 <= 0 || eredmeny2 <= 0)
             {
                 eredmeny1Txt.Text = "Nem létezik!";
                 eredmeny2Txt.Text = "Nem létezik!";
@@ -771,6 +774,27 @@ namespace terfelszinszamito
             {
                 eredmeny1Txt.Text = eredmeny1.ToString("#.##");
                 eredmeny2Txt.Text = eredmeny2.ToString("#.##");
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MertekegysegLbl();
+        }
+
+        private void MertekegysegLbl()
+        {
+            string mertekegyseg = comboBox2.SelectedItem.ToString();
+
+            if (eredmeny1Lbl.Text == "Kerület:")
+            {
+                label6.Text = mertekegyseg + "";
+                label7.Text = mertekegyseg + "²";
+            }
+            else
+            {
+                label6.Text = mertekegyseg + "²";
+                label7.Text = mertekegyseg + "³";
             }
         }
     }

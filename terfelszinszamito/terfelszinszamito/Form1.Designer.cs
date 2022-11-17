@@ -168,6 +168,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.DecimalPlaces = 2;
             this.numericUpDown1.Location = new System.Drawing.Point(128, 70);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             2147483647,
@@ -182,6 +183,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown2
             // 
+            this.numericUpDown2.DecimalPlaces = 2;
             this.numericUpDown2.Location = new System.Drawing.Point(128, 96);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             2147483647,
@@ -196,6 +198,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown3
             // 
+            this.numericUpDown3.DecimalPlaces = 2;
             this.numericUpDown3.Location = new System.Drawing.Point(128, 122);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             2147483647,
@@ -210,6 +213,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown4
             // 
+            this.numericUpDown4.DecimalPlaces = 2;
             this.numericUpDown4.Location = new System.Drawing.Point(128, 148);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             2147483647,
@@ -224,6 +228,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown5
             // 
+            this.numericUpDown5.DecimalPlaces = 2;
             this.numericUpDown5.Location = new System.Drawing.Point(128, 174);
             this.numericUpDown5.Maximum = new decimal(new int[] {
             2147483647,

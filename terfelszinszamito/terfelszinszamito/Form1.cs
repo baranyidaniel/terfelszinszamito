@@ -16,11 +16,23 @@ namespace terfelszinszamito
         public Form1()
         {
             InitializeComponent();
+
+            InputSetup();
+        }
+
+        private void InputSetup()
+        {
             NumericUpDowns.Add(numericUpDown1);
             NumericUpDowns.Add(numericUpDown2);
             NumericUpDowns.Add(numericUpDown3);
             NumericUpDowns.Add(numericUpDown4);
             NumericUpDowns.Add(numericUpDown5);
+
+            foreach (NumericUpDown item in NumericUpDowns)
+            {
+                item.Controls[0].Hide();
+                item.Controls[1].Width = Width - 4;
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

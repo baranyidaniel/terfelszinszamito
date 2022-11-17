@@ -50,6 +50,9 @@ namespace terfelszinszamito
             this.label5 = new System.Windows.Forms.Label();
             this.eredmeny1Lbl = new System.Windows.Forms.Label();
             this.eredmeny2Lbl = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -165,6 +168,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.DecimalPlaces = 2;
             this.numericUpDown1.Location = new System.Drawing.Point(128, 70);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             2147483647,
@@ -179,6 +183,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown2
             // 
+            this.numericUpDown2.DecimalPlaces = 2;
             this.numericUpDown2.Location = new System.Drawing.Point(128, 96);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             2147483647,
@@ -193,6 +198,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown3
             // 
+            this.numericUpDown3.DecimalPlaces = 2;
             this.numericUpDown3.Location = new System.Drawing.Point(128, 122);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             2147483647,
@@ -207,6 +213,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown4
             // 
+            this.numericUpDown4.DecimalPlaces = 2;
             this.numericUpDown4.Location = new System.Drawing.Point(128, 148);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             2147483647,
@@ -221,6 +228,7 @@ namespace terfelszinszamito
             // 
             // numericUpDown5
             // 
+            this.numericUpDown5.DecimalPlaces = 2;
             this.numericUpDown5.Location = new System.Drawing.Point(128, 174);
             this.numericUpDown5.Maximum = new decimal(new int[] {
             2147483647,
@@ -293,12 +301,52 @@ namespace terfelszinszamito
             this.eredmeny2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.eredmeny2Lbl.Visible = false;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.AllowDrop = true;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "mm",
+            "cm",
+            "m",
+            "km"});
+            this.comboBox2.Location = new System.Drawing.Point(141, 243);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(65, 21);
+            this.comboBox2.TabIndex = 40;
+            this.comboBox2.Visible = false;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(212, 267);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 20);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "text";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(212, 294);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 20);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "text";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(834, 401);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.eredmeny2Lbl);
             this.Controls.Add(this.eredmeny1Lbl);
             this.Controls.Add(this.label5);
@@ -356,6 +404,9 @@ namespace terfelszinszamito
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label eredmeny1Lbl;
         private System.Windows.Forms.Label eredmeny2Lbl;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

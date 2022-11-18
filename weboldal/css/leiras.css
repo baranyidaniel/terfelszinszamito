@@ -2,16 +2,8 @@ body {
     font-family: inter;
     color: #000000;
     background: linear-gradient(107.29deg, #56F1C0 0.38%, #70D3F0 100%);
-    }
-    
-nav {
-    height: 85px;
-    background: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    font-size: x-large;
-    box-shadow: 0px 10px 8px #0000002c;
 }
-                
+
 main {
     margin-left: 15%;
     margin-right: 15%;
@@ -19,15 +11,6 @@ main {
                 
 h1 {
     text-align: center;
-}
-
-.navcontainer {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    display: flex;
 }
                     
 .navitem {
@@ -46,7 +29,7 @@ a {
 }
 
 .container-xxl {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff80;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 15px;
@@ -71,18 +54,32 @@ h5{
     font-family: inter;
 }
 
-.d-flex.justify-content-center{
-    padding-bottom: 50px;
-}
-
 footer{
     text-align: center;
     height: 90px;
-    background: rgba(255, 255, 255, 0.5);
+    background: #ffffff80;
     box-shadow: 0px 10px 8px #0000002c;
 }
     
 @font-face {
     font-family: inter;
     src: url(css/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.navbar,nav{
+    width: 100%;
+    background: #ffffff80;
+    color:black;
+    font-weight: 600;
+    display: flex;
+}
+
+.nav-link.active{
+    font-size: x-large;
+}
+
+.navbar-nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }

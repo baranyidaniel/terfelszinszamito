@@ -45,11 +45,9 @@
                         <img class="card-img-top " src="img/akos.jpg" alt="Vígh Ákos " width="30% "
                             data-holder-rendered="true ">
                         <p class="card-text " id="text ">
-                        <h3>Vígh Ákos</h3><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula
-                        orci vel consequat consequat. Aenean sed lacus at nisi rhoncus pulvinar in et mi. Nulla sed
-                        neque sit amet enim ornare malesuada sed
-                        in nulla. Nunc bibendum mauris ut dui hendrerit tincidunt a sit amet magna.
+                        <h3>Vígh Ákos</h3>
                         </p>
+                        <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
                     </div>
                 </div>
 
@@ -57,11 +55,9 @@
                     <div class="card mb-4 box-shadow " style="margin: 3%; padding: 5%; ">
                         <img class="card-img-top " src="img/tate2.jpg" alt="Baranyi Dániel ">
                         <p class="card-text " id="text ">
-                        <h3>Baranyi Dániel</h3><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        vehicula orci vel consequat consequat. Aenean sed lacus at nisi rhoncus pulvinar in et mi. Nulla
-                        sed neque sit amet enim ornare malesuada
-                        sed in nulla. Nunc bibendum mauris ut dui hendrerit tincidunt a sit amet magna.
+                        <h3>Baranyi Dániel</h3>
                         </p>
+                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
                     </div>
                 </div>
 
@@ -69,35 +65,34 @@
                     <div class="card mb-4 box-shadow " style="margin: 3%; padding: 5%; ">
                         <img class="card-img-top " src="img/itsmeCarlchillchill.jpg" alt="Kerekes István " height="20% ">
                         <p class="card-text " id="text ">
-                        <h3>Kerekes István</h3><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        vehicula orci vel consequat consequat. Aenean sed lacus at nisi rhoncus pulvinar in et mi. Nulla
-                        sed neque sit amet enim ornare malesuada
-                        sed in nulla. Nunc bibendum mauris ut dui hendrerit tincidunt a sit amet magna.
+                        <h3>Kerekes István</h3>
                         </p>
+                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
                     </div>
                 </div>
             </div>
-            <div class="mb-3">
-                <form method="post" action="#">
+            <div class="mb-3" id="email">
+                <form method="post" action="mailto:ki.teszting@gmail.com" enctype=”text/plain” name=”EmailForm”>
                     <div class="form-control">
                         <div class="mb-3">
                             <label for="useremail" class="form-label">E-mail címe:</label>
-                            <input type="email" class="form-control" id="useremail" placeholder="Ide írja e-mail címét...">
+                            <input type="email" class="form-control" id="useremail" placeholder="Ide írja e-mail címét..." required>
                         </div>
+                        
                         <div class="mb-3">
                             <label for="message" class="form-label">Üzenet szövege:</label>
-                            <input type="text" class="form-control" id="message" placeholder="Ide írja üzenetét...">
+                            <input type="text" class="form-control" id="message" placeholder="Ide írja üzenetét..." required>
                             
                         </div>
                     </div>
-                    <button type="button " class="btn btn-light " style="color: black;">Küldés</button>
+                    <button type="submit" class="btn btn-light " style="color: black;" value="Send">Küldés</button>
                 </form>
             </div>
 
         </section>
 
     </div>
-
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 </body>
 
 </html>

@@ -311,9 +311,9 @@ namespace terfelszinszamito
             "cm",
             "m",
             "km"});
-            this.comboBox2.Location = new System.Drawing.Point(141, 243);
+            this.comboBox2.Location = new System.Drawing.Point(140, 241);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(65, 21);
+            this.comboBox2.Size = new System.Drawing.Size(66, 21);
             this.comboBox2.TabIndex = 40;
             this.comboBox2.Visible = false;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);

@@ -26,73 +26,85 @@
         <nav class="navcontainer">
             <a href="index.html" class="navitem">Főoldal</a>
             <a href="leiras.html" class="navitem">Leírás</a>
-            <!--<a class="nav-link" href="../" download="" target="_blank">Letöltés</a> --><!--Ez még nem mükődik.-->
+            <!--<a class="nav-link" href="../" download="" target="_blank">Letöltés</a> -->
+            <!--Ez még nem mükődik.-->
             <!--<a href="path_to_file" download="proposed_file_name">Download</a>-->
             <!--Minta-->
         </nav>
 
     </header>
 
-    <div class="container">
 
-        <section>
 
-            <h2 id="fejlesztok">Fejlesztők</h2>
+    <section class="container">
 
-            <div class="row">
-                <div class="mb-3 col-md-4 ">
-                    <div class="card mb-4 box-shadow " style="margin: 3%;padding: 5%; ">
-                        <img class="card-img-top " src="img/akos.jpg" alt="Vígh Ákos " width="30% "
-                            data-holder-rendered="true ">
-                        <p class="card-text " id="text ">
-                        <h3>Vígh Ákos</h3>
-                        </p>
-                        <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
-                    </div>
-                </div>
+        <h2 id="fejlesztok">Fejlesztők</h2>
 
-                <div class="mb-3 col-md-4 ">
-                    <div class="card mb-4 box-shadow " style="margin: 3%; padding: 5%; ">
-                        <img class="card-img-top " src="img/tate2.jpg" alt="Baranyi Dániel ">
-                        <p class="card-text " id="text ">
-                        <h3>Baranyi Dániel</h3>
-                        </p>
-                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
-                    </div>
-                </div>
+        <div class="row">
 
-                <div class="mb-3 col-md-4 ">
-                    <div class="card mb-4 box-shadow " style="margin: 3%; padding: 5%; ">
-                        <img class="card-img-top " src="img/itsmeCarlchillchill.jpg" alt="Kerekes István " height="20% ">
-                        <p class="card-text " id="text ">
-                        <h3>Kerekes István</h3>
-                        </p>
-                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
-                    </div>
+            <div class="mb-3 col-md-4">
+                <div class="card mb-4 box-shadow" style="margin: 3%;padding: 5%;">
+                    <img class="card-img-top" src="img/akos.jpg" alt="Kép Vígh Ákosról">
+                    <p class="card-text text">Vígh Ákos</p>
+                    <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
                 </div>
             </div>
-            <div class="mb-3" id="email">
-                <form method="post" action="mailto:ki.teszting@gmail.com" enctype=”text/plain” name=”EmailForm”>
-                    <div class="form-control">
-                        <div class="mb-3">
-                            <label for="useremail" class="form-label">E-mail címe:</label>
-                            <input type="email" class="form-control" id="useremail" placeholder="Ide írja e-mail címét..." required>
-                        </div>
-                        
-                        <div class="mb-3">
+
+            <div class="mb-3 col-md-4">
+                <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
+                    <img class="card-img-top" src="img/tate2.jpg" alt="Kép Baranyi Dánielről">
+                    <p class="card-text text">Baranyi Dániel</p>
+                    <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
+                </div>
+            </div>
+
+            <div class="mb-3 col-md-4">
+                <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
+                    <img class="card-img-top" src="img/itsmeCarlchillchill.jpg" alt="Kép Kerekes Istvánról">
+                    <p class="card-text text">Kerekes István</p>
+                    <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mb-3" id="email">
+
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+                <div class="form-control" id="formMsg">
+
+                    <label for="username" class="form-label">Neve:</label>
+                    <input type="email" class="form-control" id="username" placeholder="Ide írja nevét..." required>
+
+                    <label for="useremail" class="form-label">E-mail címe:</label>
+                    <input type="email" class="form-control" id="useremail" placeholder="Ide írja e-mail címét..."
+                        required>
+
+                    <div class="row">
+                        <div class="col">
                             <label for="message" class="form-label">Üzenet szövege:</label>
-                            <input type="text" class="form-control" id="message" placeholder="Ide írja üzenetét..." required>
-                            
+                            <input type="text" class="form-control" id="message" placeholder="Ide írja üzenetét..."
+                                required>
+                        </div>
+
+                        <div class="col">
+                            <button type="submit" class="btn btn-light " style="color: black;"
+                                value="Send">Küldés</button>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-light " style="color: black;" value="Send">Küldés</button>
-                </form>
-            </div>
 
-        </section>
+                </div>
 
-    </div>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 </body>
 
 </html>

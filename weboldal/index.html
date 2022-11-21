@@ -57,7 +57,7 @@
                     <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
                 </div>
             </div>
-            
+
             <div class="mb-3 col-md-4">
                 <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
                     <img class="card-img-top" src="img/itsmeCarlchillchill.jpg" alt="Kép Kerekes Istvánról">
@@ -70,20 +70,17 @@
 
         <div class="mb-3" id="email">
 
-            <form action="https://formsubmit.co/your@email.com" method="POST">
+            <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
                 <div class="form-control" id="formMsg">
-
-                    <label for="username" class="form-label">Neve:</label>
-                    <input type="email" class="form-control" id="username" placeholder="Ide írja nevét..." required>
-
+                    <input type="hidden" name="_subject" value="Új üzenet!">
                     <label for="useremail" class="form-label">E-mail címe:</label>
-                    <input type="email" class="form-control" id="useremail" placeholder="Ide írja e-mail címét..."
+                    <input type="email" class="form-control" name="email" id="useremail" placeholder="Ide írja e-mail címét..."
                         required>
 
                     <div class="row">
                         <div class="col">
-                            <label for="message" class="form-label">Üzenet szövege:</label>
-                            <input type="text" class="form-control" id="message" placeholder="Ide írja üzenetét..."
+                            <label for="msg" class="form-label">Üzenet szövege:</label>
+                            <input type="text" class="form-control" name="message" id="msg" placeholder="Ide írja üzenetét..."
                                 required>
                         </div>
 

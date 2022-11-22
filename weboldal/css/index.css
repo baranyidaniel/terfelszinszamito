@@ -92,7 +92,14 @@ header{
 
 #formMsg{
   width: 60%;
+  height: 170px;
 }
 input{
   margin-bottom: 1%;
+}
+button{
+  float: left;
+}
+#msg{
+  height: 200%;
 }

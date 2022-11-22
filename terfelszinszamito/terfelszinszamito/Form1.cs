@@ -553,7 +553,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_roldal.png");
                         break;
                     }
             }
@@ -577,7 +577,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_sugar.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
                         break;
                     }
             }
@@ -595,7 +595,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_testmagassag.png");
                         break;
                     }
             }

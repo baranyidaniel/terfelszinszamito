@@ -138,7 +138,7 @@ namespace terfelszinszamito
                         label4.Visible = true;
                         numericUpDown4.Visible = true;
 
-                        label5.Text = "magasság (m):";
+                        label5.Text = "m magasság:";
                         label5.Visible = true;
                         numericUpDown5.Visible = true;
 
@@ -190,7 +190,7 @@ namespace terfelszinszamito
                         label2.Visible = true;
                         numericUpDown2.Visible = true;
 
-                        label3.Text = "magasság (m):";
+                        label3.Text = "m magasság:";
                         label3.Visible = true;
                         numericUpDown3.Visible = true;
 
@@ -272,7 +272,7 @@ namespace terfelszinszamito
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/kor/le_cercle_alap.png");
 
-                        label1.Text = "sugár (r):";
+                        label1.Text = "r sugár:";
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 
@@ -302,11 +302,11 @@ namespace terfelszinszamito
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/henger/henger_alap.png");
 
-                        label1.Text = "magasság (m):";
+                        label1.Text = "m magasság:";
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 
-                        label2.Text = "sugár (r):";
+                        label2.Text = "r sugár:";
                         label2.Visible = true;
                         numericUpDown2.Visible = true;
 
@@ -344,11 +344,11 @@ namespace terfelszinszamito
                         label3.Visible = true;
                         numericUpDown3.Visible = true;
 
-                        label4.Text = "oldalmagasság (m):";
+                        label4.Text = "m oldalmagasság:";
                         label4.Visible = true;
                         numericUpDown4.Visible = true;
 
-                        label5.Text = "testmagasság (M):";
+                        label5.Text = "M testmagasság:";
                         label5.Visible = true;
                         numericUpDown5.Visible = true;
 
@@ -362,7 +362,7 @@ namespace terfelszinszamito
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/gomb/gomb_alap.png");
 
-                        label1.Text = "sugár (r):";
+                        label1.Text = "r sugár:";
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 

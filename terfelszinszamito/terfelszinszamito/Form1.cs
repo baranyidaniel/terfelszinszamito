@@ -16,7 +16,6 @@ namespace terfelszinszamito
         public Form1()
         {
             InitializeComponent();
-
             InputSetup();
         }
 
@@ -632,11 +631,7 @@ namespace terfelszinszamito
                             eredmeny1 = a + b + c;
                             eredmeny2 = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
                         }
-                        else
-                        {
-                            eredmeny1 = -1;
-                            eredmeny2 = -1;
-                        }
+                        else return;
                         break;
                     }
 
@@ -691,7 +686,6 @@ namespace terfelszinszamito
 
                         eredmeny1 = 2 * (a + b);
                         eredmeny2 = a * m;
-
                         break;
                     }
 
@@ -703,9 +697,12 @@ namespace terfelszinszamito
                                e_atlo = Convert.ToDouble(numericUpDown2.Value),
                                f_atlo = Convert.ToDouble(numericUpDown3.Value);
 
-                        eredmeny1 = 4 * a;
-                        eredmeny2 = e_atlo * f_atlo / 2;
-
+                        if (e_atlo < 2 * a && f_atlo < 2 * a)
+                        {
+                            eredmeny1 = 4 * a;
+                            eredmeny2 = e_atlo * f_atlo / 2;
+                        }
+                        else return;
                         break;
                     }
 
@@ -718,9 +715,12 @@ namespace terfelszinszamito
                                e_atlo = Convert.ToDouble(numericUpDown3.Value),
                                f_atlo = Convert.ToDouble(numericUpDown4.Value);
 
-                        eredmeny1 = 2 * (a + b);
-                        eredmeny2 = e_atlo * f_atlo / 2;
-
+                        if (e_atlo < 2 * a && f_atlo < a + b)
+                        {
+                            eredmeny1 = 2 * (a + b);
+                            eredmeny2 = e_atlo * f_atlo / 2;
+                        }
+                        else return;
                         break;
                     }
 
@@ -800,13 +800,13 @@ namespace terfelszinszamito
 
             if (eredmeny1Lbl.Text == "Kerület:")
             {
-                label6.Text = mertekegyseg + "";
-                label7.Text = mertekegyseg + "²";
+                label6.Text = $"{mertekegyseg}";
+                label7.Text = $"{mertekegyseg}²";
             }
             else
             {
-                label6.Text = mertekegyseg + "²";
-                label7.Text = mertekegyseg + "³";
+                label6.Text = $"{mertekegyseg}²";
+                label7.Text = $"{mertekegyseg}³";
             }
         }
     }

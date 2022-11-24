@@ -631,7 +631,6 @@ namespace terfelszinszamito
                             eredmeny1 = a + b + c;
                             eredmeny2 = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
                         }
-                        else return;
                         break;
                     }
 

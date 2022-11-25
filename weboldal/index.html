@@ -18,77 +18,88 @@
 </head>
 
 <body>
-
     <header>
-
-        <h1>Térfelszínszámító</h1>
-        <nav class="navcontainer">
-            <a href="index.html" class="navitem"><b>Főoldal</b></a>
-            <a href="leiras.html" class="navitem"><b>Leírás</b></a>
-            <a class="nav-link" href="../terfelszinszamito.7z" target="_blank"><b>Letöltés</b></a>
-        </nav>
-
-    </header>
-
-
-
-    <section class="container">
-
-        <h1 id="fejlesztok">Fejlesztők</h1>
-        <div class="mb-3">
-            <div class="row">
-
-                <div class="mb-3 col-md-4">
-                    <div class="card mb-4 box-shadow" style="margin: 3%;padding: 5%;">
-                        <img class="card-img-top" src="img/akos.jpg" alt="Kép Vígh Ákosról" title="Vígh Ákos">
-                        <p class="card-text text">Vígh Ákos</p>
-                        <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
-                    </div>
-                </div>
-
-                <div class="mb-3 col-md-4">
-                    <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
-                        <img class="card-img-top" src="img/tate2.jpg" alt="Kép Baranyi Dánielről" title="Baranyi Dániel">
-                        <p class="card-text text">Baranyi Dániel</p>
-                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
-                    </div>
-                </div>
-
-                <div class="mb-3 col-md-4">
-                    <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
-                        <img class="card-img-top" src="img/stewie.jpg" alt="Kép Kerekes Istvánról" title="Kerekes István">
-                        <p class="card-text text">Kerekes István</p>
-                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
+        <h1><b>Térfelszínszámító</b></h1>
+        <nav class="navbar sticky-top navbar-expand-md navbar-light navbar-text">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="index.html" id="toLeft"><b>Főoldal</b></a>
+                        <a class="nav-link active" href="leiras.html" id="toCenter"><b>Leírás</b></a>
+                        <a class="nav-link active" href="../terfelszinszamito.7z" id="toRight" target="_blank"><b>Letöltés</b></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <div class="mb-3" id="email">
-            <h3><b>Küldjön nekünk üzenetet!</b></h3>
-            <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
-                <div class="form-control" id="formMsg">
-                    <input type="hidden" name="_subject" value="Új üzenet!">
-                    <label for="useremail" class="form-label">E-mail címe:</label>
-                    <input type="email" class="form-control" name="email" id="useremail" placeholder="Ide írja e-mail címét..." required>
+    <main>
+        <section class="container">
 
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" name="message" id="msg" placeholder="Ide írja üzenetét..." required>
-                        </div>
+            <h1 id="fejlesztok">Fejlesztők</h1>
+            <div class="mb-3">
+                <div class="row">
 
-                        <div class="col">
-                            <button type="submit" class="btn btn-light btn-outline-dark" value="Send">Küldés</button>
+                    <div class="mb-3 col-md-4">
+                        <div class="card mb-4 box-shadow" style="margin: 3%;padding: 5%;">
+                            <img class="card-img-top" src="img/akos.jpg" alt="Kép Vígh Ákosról" title="Vígh Ákos">
+                            <p class="card-text text">Vígh Ákos</p>
+                            <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
                         </div>
                     </div>
 
+                    <div class="mb-3 col-md-4">
+                        <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
+                            <img class="card-img-top" src="img/tate2.jpg" alt="Kép Baranyi Dánielről" title="Baranyi Dániel">
+                            <p class="card-text text">Baranyi Dániel</p>
+                            <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-md-4">
+                        <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
+                            <img class="card-img-top" src="img/stewie.jpg" alt="Kép Kerekes Istvánról" title="Kerekes István">
+                            <p class="card-text text">Kerekes István</p>
+                            <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-            </form>
-        </div>
+            <div class="mb-3" id="email">
+                <h3><b>Küldjön nekünk üzenetet!</b></h3>
+                <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
+                    <div class="form-control" id="formMsg">
+                        <input type="hidden" name="_subject" value="Új üzenet!">
+                        <label for="useremail" class="form-label">E-mail címe:</label>
+                        <input type="email" class="form-control" name="email" id="useremail" placeholder="Ide írja e-mail címét..." required>
 
-    </section>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" name="message" id="msg" placeholder="Ide írja üzenetét..." required>
+                            </div>
 
+                            <div class="col">
+                                <button type="submit" class="btn btn-light btn-outline-dark" value="Send">Küldés</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <h4>2022 ¤ Térfelszínszámító Bt.</h4>
+        <h5>© Minden jog fenntartva</h5>
+        <h6>Impresszum</h6>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

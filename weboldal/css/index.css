@@ -1,110 +1,174 @@
 body {
-font-family: inter;
-color: #000000;
-background: linear-gradient(107.29deg, #56F1C0 0.38%, #70D3F0 100%);
+    font-family: inter;
+    color: #000000;
+    background: linear-gradient(107.29deg, #56F1C0 0.38%, #70D3F0 100%);
 }
 
 nav {
-height: 85px;
-background: rgba(255, 255, 255, 0.5);
-text-align: center;
-font-size: x-large;
-box-shadow: 0px 10px 8px #0000002c;
-margin-bottom: 2%;
+    height: 85px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 0px 10px 8px #0000002c;
+    margin-bottom: 2%;
 }
-            
+
 main {
-margin-left: 15%;
-margin-right: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
-            
+
 h1 {
-text-align: center;
+    text-align: center;
 }
-            
+
 .container {
-background-color: white;
+    background-color: white;
 }
-            
+
 .navcontainer {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-align-content: space-around;
-position: sticky !important;
-top: 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    position: sticky !important;
+    top: 0px !important;
 }
-            
+
 .navitem {
-flex: 0 0 auto;
-margin: 10px;
+    flex: 0 0 auto;
+    margin: 10px;
 }
-            
+
 a {
-color: #000000;
-text-decoration: none;
-font-weight: bold;
+    color: #000000;
+    text-decoration: none;
 }
-            
+
 #fejlesztok {
-text-align: center;
-font-style: normal;
+    text-align: center;
+    font-style: normal;
 }
-            
+
 @font-face {
-font-family: inter;
-src: url(Inter-VariableFont_slnt\,wght.ttf);
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
 }
+
 .container {
-  background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 img {
-  height: 90%;
-  width: 100%;
-  display: block;
+    height: 90%;
+    width: 100%;
+    display: block;
 }
 
 .row {
-  text-align: center;
+    text-align: center;
 }
 
 .text {
-  padding: 10%;
-  font-size: larger;
-  font-weight: bold;
+    padding: 10%;
+    font-size: larger;
+    font-weight: bold;
 }
 
 #fejlesztok {
-  font-weight: bold;
+    margin-top: 2% !important;
+    font-weight: bold;
 }
 
-li{
+li {
     float: center;
 }
-section{
+
+section {
     margin-bottom: 3%;
 }
-header{
+
+header {
     margin-top: 2%;
+    font-weight: bold;
 }
 
-#formMsg{
-  width: 60%;
-  height: 170px;
+#formMsg {
+    width: 60%;
+    height: 170px;
 }
-input{
-  margin-bottom: 1%;
+
+footer {
+    text-align: center;
+    height: 90px;
+    background: #ffffff80;
+    box-shadow: 0px 10px 8px #0000002c;
 }
-button{
-  float: left;
+
+h2 {
+    font-weight: bold;
 }
-#msg{
-  height: 200%;
-  width: max-content;
+
+h5 {
+    color: rgba(0, 0, 0, 0.75);
 }
-#email{
-  width: 40%;
+
+input {
+    margin-bottom: 1%;
+}
+
+button {
+    float: left;
+}
+
+#msg {
+    height: 200%;
+    width: 100%;
+}
+
+#email {
+    width: 60%;
+    padding-bottom: 3%;
+    padding-left: 4%;
+}
+
+#useremail {
+    width: 48.5%;
+}
+
+h2 {
+    padding-top: 2%;
+}
+
+#toLeft {
+    text-align: left;
+    justify-content: left;
+}
+
+#toCenter {
+    text-align: center;
+    justify-content: center;
+}
+
+#toRight {
+    text-align: right;
+    justify-content: right;
+}
+
+.navbar-expand-md .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+a#toRight {
+    margin-left: 100%;
+    margin-right: -100%;
+}
+
+a#toLeft {
+    margin-left: -100%;
+    margin-right: 100%;
 }

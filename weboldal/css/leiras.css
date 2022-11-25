@@ -83,3 +83,7 @@ footer{
     align-items: center !important;
     justify-content: center !important;
 }
+
+.carousel-item{
+    padding-bottom: 3.5em;
+}

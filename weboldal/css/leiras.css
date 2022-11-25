@@ -63,15 +63,16 @@ footer{
     
 @font-face {
     font-family: inter;
-    src: url(css/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
 }
 
-.navbar,nav{
+.navbar-nav.navbar{
     width: 100%;
     background: #ffffff80;
     color:black;
     font-weight: 600;
     display: flex;
+    gap: 20%;
 }
 
 .nav-link.active{

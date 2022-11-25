@@ -142,33 +142,21 @@ h2 {
     padding-top: 2%;
 }
 
-#toLeft {
-    text-align: left;
-    justify-content: left;
+.navbar,
+nav {
+    width: 100%;
+    background: #ffffff80;
+    color: black;
+    font-weight: 600;
+    display: flex;
 }
 
-#toCenter {
-    text-align: center;
-    justify-content: center;
+.nav-link.active {
+    font-size: x-large;
 }
 
-#toRight {
-    text-align: right;
-    justify-content: right;
-}
-
-.navbar-expand-md .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    justify-content: center;
-}
-
-a#toRight {
-    margin-left: 100%;
-    margin-right: -100%;
-}
-
-a#toLeft {
-    margin-left: -100%;
-    margin-right: 100%;
+.navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }

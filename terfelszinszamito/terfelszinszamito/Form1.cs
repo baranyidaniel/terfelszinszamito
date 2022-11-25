@@ -16,7 +16,6 @@ namespace terfelszinszamito
         public Form1()
         {
             InitializeComponent();
-
             InputSetup();
         }
 
@@ -139,7 +138,7 @@ namespace terfelszinszamito
                         label4.Visible = true;
                         numericUpDown4.Visible = true;
 
-                        label5.Text = "magasság (m):";
+                        label5.Text = "m magasság:";
                         label5.Visible = true;
                         numericUpDown5.Visible = true;
 
@@ -191,7 +190,7 @@ namespace terfelszinszamito
                         label2.Visible = true;
                         numericUpDown2.Visible = true;
 
-                        label3.Text = "magasság (m):";
+                        label3.Text = "m magasság:";
                         label3.Visible = true;
                         numericUpDown3.Visible = true;
 
@@ -273,7 +272,7 @@ namespace terfelszinszamito
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/kor/le_cercle_alap.png");
 
-                        label1.Text = "sugár (r):";
+                        label1.Text = "r sugár:";
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 
@@ -303,11 +302,11 @@ namespace terfelszinszamito
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/henger/henger_alap.png");
 
-                        label1.Text = "magasság (m):";
+                        label1.Text = "m magasság:";
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 
-                        label2.Text = "sugár (r):";
+                        label2.Text = "r sugár:";
                         label2.Visible = true;
                         numericUpDown2.Visible = true;
 
@@ -345,11 +344,11 @@ namespace terfelszinszamito
                         label3.Visible = true;
                         numericUpDown3.Visible = true;
 
-                        label4.Text = "oldalmagasság (m):";
+                        label4.Text = "m oldalmagasság:";
                         label4.Visible = true;
                         numericUpDown4.Visible = true;
 
-                        label5.Text = "testmagasság (M):";
+                        label5.Text = "M testmagasság:";
                         label5.Visible = true;
                         numericUpDown5.Visible = true;
 
@@ -363,7 +362,7 @@ namespace terfelszinszamito
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/gomb/gomb_alap.png");
 
-                        label1.Text = "sugár (r):";
+                        label1.Text = "r sugár:";
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 
@@ -553,7 +552,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_roldal.png");
                         break;
                     }
             }
@@ -577,7 +576,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_sugar.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
                         break;
                     }
             }
@@ -595,7 +594,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_testmagassag.png");
                         break;
                     }
             }
@@ -631,11 +630,6 @@ namespace terfelszinszamito
                         {
                             eredmeny1 = a + b + c;
                             eredmeny2 = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
-                        }
-                        else
-                        {
-                            eredmeny1 = -1;
-                            eredmeny2 = -1;
                         }
                         break;
                     }
@@ -691,7 +685,6 @@ namespace terfelszinszamito
 
                         eredmeny1 = 2 * (a + b);
                         eredmeny2 = a * m;
-
                         break;
                     }
 
@@ -703,9 +696,12 @@ namespace terfelszinszamito
                                e_atlo = Convert.ToDouble(numericUpDown2.Value),
                                f_atlo = Convert.ToDouble(numericUpDown3.Value);
 
-                        eredmeny1 = 4 * a;
-                        eredmeny2 = e_atlo * f_atlo / 2;
-
+                        if (e_atlo < 2 * a && f_atlo < 2 * a)
+                        {
+                            eredmeny1 = 4 * a;
+                            eredmeny2 = e_atlo * f_atlo / 2;
+                        }
+                        else return;
                         break;
                     }
 
@@ -718,9 +714,12 @@ namespace terfelszinszamito
                                e_atlo = Convert.ToDouble(numericUpDown3.Value),
                                f_atlo = Convert.ToDouble(numericUpDown4.Value);
 
-                        eredmeny1 = 2 * (a + b);
-                        eredmeny2 = e_atlo * f_atlo / 2;
-
+                        if (e_atlo < 2 * a && f_atlo < a + b)
+                        {
+                            eredmeny1 = 2 * (a + b);
+                            eredmeny2 = e_atlo * f_atlo / 2;
+                        }
+                        else return;
                         break;
                     }
 
@@ -800,13 +799,13 @@ namespace terfelszinszamito
 
             if (eredmeny1Lbl.Text == "Kerület:")
             {
-                label6.Text = mertekegyseg + "";
-                label7.Text = mertekegyseg + "²";
+                label6.Text = $"{mertekegyseg}";
+                label7.Text = $"{mertekegyseg}²";
             }
             else
             {
-                label6.Text = mertekegyseg + "²";
-                label7.Text = mertekegyseg + "³";
+                label6.Text = $"{mertekegyseg}²";
+                label7.Text = $"{mertekegyseg}³";
             }
         }
     }

@@ -12,12 +12,7 @@ main {
 h1 {
     text-align: center;
 }
-                    
-.navitem {
-    margin: 10px;
-    flex: 0 0 auto;
-}
-                    
+                
 a {
     text-decoration: none;
     color: #000000;
@@ -30,10 +25,10 @@ a {
 
 .container-xxl {
     background-color: #ffffff80;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     
 }
 
@@ -41,12 +36,12 @@ a {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-h2{
-    font-weight: bold;
+.leiras > p{
+    padding: 1em;
 }
 
-h5{
-    color: rgba(0, 0, 0, 0.75);
+h2{
+    font-weight: bold;
 }
 
 .carousel-inner{
@@ -67,7 +62,7 @@ footer{
 }
 
 .navbar-nav.navbar{
-    width: 100%;
+    width: 100% !important;
     background: #ffffff80;
     color:black;
     font-weight: 600;

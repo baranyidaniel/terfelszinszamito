@@ -25,7 +25,7 @@ a {
 
 .container-xxl {
     background-color: #ffffff80;
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -54,6 +54,7 @@ footer{
     height: 90px;
     background: #ffffff80;
     box-shadow: 0px 10px 8px #0000002c;
+    font-weight: bold;
 }
     
 @font-face {
@@ -63,7 +64,6 @@ footer{
 
 .navbar-nav.navbar{
     width: 100% !important;
-    background: #ffffff80;
     color:black;
     font-weight: 600;
     display: flex;
@@ -82,4 +82,9 @@ footer{
 
 .carousel-item{
     padding-bottom: 3.5em;
+}
+
+.navbar.sticky-top.navbar-expand-md.navbar-light{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 8px #0000002c;
 }

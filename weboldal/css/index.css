@@ -6,7 +6,7 @@ body {
 
 nav {
     height: 85px;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     font-size: x-large;
     box-shadow: 0px 10px 8px #0000002c;
@@ -14,16 +14,14 @@ nav {
 }
 
 main {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0 15% 3% 15%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
 }
 
 h1 {
     text-align: center;
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
 }
 
 .navcontainer {
@@ -45,11 +43,6 @@ h1 {
 a {
     color: #000000;
     text-decoration: none;
-}
-
-#fejlesztok {
-    text-align: center;
-    font-style: normal;
 }
 
 @font-face {
@@ -77,17 +70,8 @@ img {
     font-weight: bold;
 }
 
-#fejlesztok {
-    margin-top: 2% !important;
-    font-weight: bold;
-}
-
 li {
     float: center;
-}
-
-section {
-    margin-bottom: 3%;
 }
 
 header {
@@ -107,29 +91,6 @@ h2 {
 
 h5 {
     color: rgba(0, 0, 0, 0.75);
-}
-
-input {
-    margin-bottom: 1%;
-}
-
-button {
-    float: left;
-}
-
-#msg {
-    height: 200%;
-    width: 100%;
-}
-
-#email {
-    width: 60%;
-    padding-bottom: 3%;
-    padding-left: 4%;
-}
-
-#useremail {
-    width: 48.5%;
 }
 
 h2 {
@@ -152,8 +113,4 @@ h2 {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-}
-
-.btn.btn-light{
-    float: right;
 }

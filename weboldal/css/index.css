@@ -23,7 +23,7 @@ h1 {
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .navcontainer {
@@ -94,11 +94,6 @@ header {
     font-weight: bold;
 }
 
-#formMsg {
-    width: 60%;
-    height: 170px;
-}
-
 footer {
     text-align: center;
     height: 90px;
@@ -157,4 +152,8 @@ h2 {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+.btn.btn-light{
+    float: right;
 }

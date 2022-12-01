@@ -657,7 +657,7 @@ namespace terfelszinszamito
                                m = Convert.ToDouble(numericUpDown5.Value);
 
                         eredmeny1 = a + b + c + d;
-                        eredmeny2 = a + c / 2 * m;
+                        eredmeny2 = (a + c) * m / 2;
 
                         break;
                     }
@@ -701,7 +701,12 @@ namespace terfelszinszamito
                             eredmeny1 = 4 * a;
                             eredmeny2 = e_atlo * f_atlo / 2;
                         }
-                        else return;
+                        else
+                        {
+                            eredmeny1 = 0;
+                            eredmeny2 = 0;
+                        }
+                            
                         break;
                     }
 

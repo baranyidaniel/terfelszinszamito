@@ -336,21 +336,21 @@ namespace terfelszinszamito
                         label1.Visible = true;
                         numericUpDown1.Visible = true;
 
-                        label2.Text = "o oldal:";
+                        label2.Text = "M testmagasság:";
                         label2.Visible = true;
                         numericUpDown2.Visible = true;
 
-                        label3.Text = "r oldal:";
-                        label3.Visible = true;
-                        numericUpDown3.Visible = true;
+                        label3.Text = "";
+                        label3.Visible = false;
+                        numericUpDown3.Visible = false;
 
-                        label4.Text = "m oldalmagasság:";
-                        label4.Visible = true;
-                        numericUpDown4.Visible = true;
+                        label4.Text = "";
+                        label4.Visible = false;
+                        numericUpDown4.Visible = false;
 
-                        label5.Text = "M testmagasság:";
-                        label5.Visible = true;
-                        numericUpDown5.Visible = true;
+                        label5.Text = "";
+                        label5.Visible = false;
+                        numericUpDown5.Visible = false;
 
                         eredmeny1Lbl.Text = "Felület:";
                         eredmeny2Lbl.Text = "Térfogat:";
@@ -510,7 +510,7 @@ namespace terfelszinszamito
 
                 case "Gúla":
                     {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldal.png");
+                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_testmagassag.png");
                         break;
                     }
             }
@@ -549,12 +549,6 @@ namespace terfelszinszamito
                         pictureBox1.Image = Image.FromFile("alakzat/deltoid/deltoid_eatlo.png");
                         break;
                     }
-
-                case "Gúla":
-                    {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_roldal.png");
-                        break;
-                    }
             }
         }
 
@@ -573,12 +567,6 @@ namespace terfelszinszamito
                         pictureBox1.Image = Image.FromFile("alakzat/deltoid/deltoid_fatlo.png");
                         break;
                     }
-
-                case "Gúla":
-                    {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_oldalmagassag.png");
-                        break;
-                    }
             }
         }
 
@@ -589,12 +577,6 @@ namespace terfelszinszamito
                 case "Trapéz":
                     {
                         pictureBox1.Image = Image.FromFile("alakzat/trapez/trapez_magassag.png");
-                        break;
-                    }
-
-                case "Gúla":
-                    {
-                        pictureBox1.Image = Image.FromFile("alakzat/gula/gula_testmagassag.png");
                         break;
                     }
             }
@@ -724,7 +706,11 @@ namespace terfelszinszamito
                             eredmeny1 = 2 * (a + b);
                             eredmeny2 = e_atlo * f_atlo / 2;
                         }
-                        else return;
+                        else
+                        {
+                            eredmeny1 = 0;
+                            eredmeny2 = 0;
+                        }
                         break;
                     }
 
@@ -746,7 +732,7 @@ namespace terfelszinszamito
 
                         double r = Convert.ToDouble(numericUpDown1.Value),
                                m = Convert.ToDouble(numericUpDown2.Value),
-                               terulet_palast = 2 * Math.PI * m;
+                               terulet_palast = 2 * Math.PI * r * m;
 
                         eredmeny1 = terulet_palast + Math.PI * Math.Pow(r, 2);
                         eredmeny2 = Math.PI * Math.Pow(r, 2) * m;
@@ -759,11 +745,11 @@ namespace terfelszinszamito
                         pictureBox1.Image = Image.FromFile("alakzat/gula/gula_alap.png");
 
                         double a = Convert.ToDouble(numericUpDown1.Value),
-                               P = 4 * (Math.Sqrt(3) / 2 * a),
-                               test_m = Convert.ToDouble(numericUpDown5.Value);
+                               m = Convert.ToDouble(numericUpDown2.Value),
+                               P = 4 * (Math.Sqrt(3) / 2 * a);
 
                         eredmeny1 = Math.Pow(a, 2) + P;
-                        eredmeny2 = 4 * a * test_m / 3;
+                        eredmeny2 = 0.33 * Math.Pow(a, 2) * m;
 
                         break;
                     }
@@ -775,7 +761,7 @@ namespace terfelszinszamito
                         double r = Convert.ToDouble(numericUpDown1.Value);
 
                         eredmeny1 = 4 * Math.PI * Math.Pow(r, 2);
-                        eredmeny2 = 4 / 3 * Math.PI + Math.Pow(r, 3);
+                        eredmeny2 = 4 / 3 * Math.PI * Math.Pow(r, 3);
 
                         break;
                     }

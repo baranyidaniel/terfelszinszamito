@@ -34,11 +34,9 @@
     </header>
 
     <main>
-        <section class="container">
-            <h1 id="fejlesztok">Fejlesztők</h1>
+        <h2>Fejlesztők</h2>
             <div class="mb-3">
                 <div class="row">
-
                     <div class="mb-3 col-md-4">
                         <div class="card mb-4 box-shadow" style="margin: 3%;padding: 5%;">
                             <img class="card-img-top" src="img/akos.jpg" alt="Kép Vígh Ákosról" title="Vígh Ákos">
@@ -65,27 +63,28 @@
                 </div>
             </div>
 
-            <div class="form">
-                <h3><b>Küldjön nekünk üzenetet!</b></h3>
-                <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email cím</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="pelda@pelda.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Üzenet</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button type="submit" class="btn btn-light">Küldés</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+            <hr>
+
+            <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
+                <h3>Küldjön nekünk üzenetet!</h3>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email címe:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="pelda@pelda.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Üzenet:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Küldés</button>
+            </form>
     </main>
+
     <footer class="navbar-nav navbar">
         <h6>2022 ¤ Térfelszínszámító Bt.</h6>
         <h6>© Minden jog fenntartva</h6>
         <h6>Impresszum</h6>
     </footer>
+
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

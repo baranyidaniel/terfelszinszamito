@@ -2,24 +2,22 @@
 <html lang="hu">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="authors" content="Kerekes István, Baranyi Dániel, Vígh Ákos">
     <meta name="description" content="A térfelszín számító applikáció bemutatása">
     <meta name="keywords" content="Térfelszínszámító, Matematika, Számítás, Terület, Kerület, Terület és Kerület számítása, Alakzatok">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="../docs/web_pics/favicon-32x32.png">
     <title>Térfelszínszámító</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 
 <body>
     <header>
-        <h1><b>Térfelszínszámító</b></h1>
+        <h1>Térfelszínszámító</h1>
         <nav class="navbar sticky-top navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,75 +27,64 @@
                     <div class="navbar-nav navbar">
                         <a class="nav-link active" href="index.html">Főoldal</a>
                         <a class="nav-link active" href="leiras.html">Leírás</a>
-                        <a class="nav-link active" href="">Letöltés</a>
+                        <a class="nav-link active" href="assets/terfelszinszamito.zip" download="Térfelszínszámító">Letöltés</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="container">
-
-            <h1 id="fejlesztok">Fejlesztők</h1>
-            <div class="mb-3">
-                <div class="row">
-
-                    <div class="mb-3 col-md-4">
-                        <div class="card mb-4 box-shadow" style="margin: 3%;padding: 5%;">
-                            <img class="card-img-top" src="img/akos.jpg" alt="Kép Vígh Ákosról" title="Vígh Ákos">
-                            <p class="card-text text">Vígh Ákos</p>
-                            <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
-                        </div>
+        <h2>Fejlesztők</h2>
+        <div class="mb-3">
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <div class="card mb-4 box-shadow" style="margin: 3%;padding: 5%;">
+                        <img class="card-img-top" src="img/akos.jpg" alt="Kép Vígh Ákosról" title="Vígh Ákos">
+                        <p class="card-text text">Vígh Ákos</p>
+                        <p>Diák a Bajai SZC Türr István technikumban, C# programozó.</p>
                     </div>
+                </div>
 
-                    <div class="mb-3 col-md-4">
-                        <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
-                            <img class="card-img-top" src="img/tate2.jpg" alt="Kép Baranyi Dánielről" title="Baranyi Dániel">
-                            <p class="card-text text">Baranyi Dániel</p>
-                            <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
-                        </div>
+                <div class="mb-3 col-md-4">
+                    <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
+                        <img class="card-img-top" src="img/tate2.jpg" alt="Kép Baranyi Dánielről" title="Baranyi Dániel">
+                        <p class="card-text text">Baranyi Dániel</p>
+                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
                     </div>
+                </div>
 
-                    <div class="mb-3 col-md-4">
-                        <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
-                            <img class="card-img-top" src="img/stewie.jpg" alt="Kép Kerekes Istvánról" title="Kerekes István">
-                            <p class="card-text text">Kerekes István</p>
-                            <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
-                        </div>
+                <div class="mb-3 col-md-4">
+                    <div class="card mb-4 box-shadow" style="margin: 3%; padding: 5%;">
+                        <img class="card-img-top" src="img/stewie.jpg" alt="Kép Kerekes Istvánról" title="Kerekes István">
+                        <p class="card-text text">Kerekes István</p>
+                        <p>Diák a Bajai SZC Türr István technikumban, Frontend dev.</p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="mb-3" id="email">
-                <h3><b>Küldjön nekünk üzenetet!</b></h3>
-                <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
-                    <div class="form-control" id="formMsg">
-                        <input type="hidden" name="_subject" value="Új üzenet!">
-                        <label for="useremail" class="form-label">E-mail címe:</label>
-                        <input type="email" class="form-control" name="email" id="useremail" placeholder="Ide írja e-mail címét..." required>
+        <hr>
 
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" name="message" id="msg" placeholder="Ide írja üzenetét..." required>
-                            </div>
-
-                            <div class="col">
-                                <button type="submit" class="btn btn-light btn-outline-dark" value="Send">Küldés</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </form>
+        <form action="https://formsubmit.co/kerekesistvan.teszteles@outlook.hu" method="POST">
+            <h3>Küldjön nekünk üzenetet!</h3>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email címe:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="pelda@pelda.com">
             </div>
-
-        </section>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Üzenet:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Küldés</button>
+        </form>
     </main>
-    <footer>
-        <h4>2022 ¤ Térfelszínszámító Bt.</h4>
-        <h5>© Minden jog fenntartva</h5>
+
+    <footer class="navbar-nav navbar">
+        <h6>2022 ¤ Térfelszínszámító Bt.</h6>
+        <h6>© Minden jog fenntartva</h6>
         <h6>Impresszum</h6>
     </footer>
+
     <script src="js/bootstrap.min.js"></script>
 </body>
 
